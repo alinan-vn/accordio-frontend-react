@@ -1,0 +1,60 @@
+.create-account {
+    background-color: $create-account-background-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__form {
+
+        margin-top: 20vh;
+
+        &-title {
+            font-size: 1.3rem;
+            font-weight: bolder;
+            margin-left: 16%;
+        }
+
+        &-label {
+            font-weight: bolder;
+        }
+
+        &-input {
+            margin: 2vh 0 2vh 0;
+            height: 5vh;
+            width: 20vw;
+            border-radius: 8px;
+            font-size: 1.1rem;
+
+            &-eye {
+                margin-left: .5vw;
+                height: 1.8rem;
+            }
+        }
+
+        &-terms-and-conditions {
+            display: grid;
+            grid-template-columns: 3vw 19vw;
+
+            & > input {
+                height: 3vw;
+                width: 3vh;
+            }
+
+            & > p {
+                margin-top: 1vh;
+            }
+        }
+
+        & > button {
+            margin-bottom: 10vh;
+            margin-top: 2vh;
+            height: 6vh;
+            width: 20vw;
+            background-color: $nav-background-color;
+            color: $nav-font-color;
+            border-radius: 10px;
+            font-size: 1.1rem;
+
+        }
+    }
+}
