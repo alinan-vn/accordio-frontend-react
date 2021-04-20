@@ -14,7 +14,7 @@ class CreateAccount extends React.Component {
     showPassword = () => {
         let passwordInput = document.querySelector('#password')
         let repeatPasswordInput = document.querySelector('#repeat-password')
-        if(passwordInput.type == 'password'){
+        if(passwordInput.type === 'password'){
             passwordInput.type = ''
             repeatPasswordInput.type = ''
             this.setState({
@@ -55,6 +55,10 @@ class CreateAccount extends React.Component {
                 />
             )
         }
+    }
+
+    goToEmailVerification = () => {
+        this.props.history.push('/email-verification')
     }
 
     render(){
@@ -100,7 +104,7 @@ class CreateAccount extends React.Component {
                         <p>I accept the <a href='#target'>Terms and Conditions</a> and acknowledge the <a href='#target'>Privacy Policy</a></p>
                     </div>
                     
-                    <button>Continue</button>
+                    <button onClick={this.goToEmailVerification}>Continue</button>
                 </form></div>
 
             </section>
