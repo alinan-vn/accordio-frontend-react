@@ -90,11 +90,14 @@ class CreateAccount extends React.Component {
                         {this.properEyeIcon()}
                     </label><br />
                     
-                    <p>-- -- -- --</p> {/* bar that shows how good password is */}
-                    
+                    <div className='create-account__password-lines'>
+                        <hr />
+                        <p>Strong</p>
+                    </div>
+
                     <div className='create-account__form-terms-and-conditions'>
                         <input type='checkbox' />
-                        <p>I accept the Terms and Conditions and acknowledge the Privacy Policy</p>
+                        <p>I accept the <a href='#target'>Terms and Conditions</a> and acknowledge the <a href='#target'>Privacy Policy</a></p>
                     </div>
                     
                     <button>Continue</button>

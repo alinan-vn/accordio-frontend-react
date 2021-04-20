@@ -57,4 +57,19 @@
 
         }
     }
+
+    &__password-lines {
+        & > hr {
+            width: 15vw;
+            height: .25vh;
+            border-style: none;
+            background-color: #47ff47;
+            border-color: #47ff47;
+            border-radius: 10rem;
+        }
+
+        & > p {
+            margin-left: 15vw;
+        }
+    }
 }
