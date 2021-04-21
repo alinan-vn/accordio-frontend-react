@@ -13,7 +13,7 @@ class EmailVerification extends React.Component {
                 <div className='email-verification__text'>
                     <p className='email-verification__text-almost-there'>Almost there...</p>
                     <p className='email-verification__text-check-email'>Please check your email: <br /><strong>ladadaddada@gmail.com</strong><br /> to verify your account</p>
-                    <p className='email-verification__text-resend'>Haven't received an email?<br /> Check your spam folder, otherwise <a href='#target'>send me a new one!</a></p>
+                    <p className='email-verification__text-resend'>Haven't received an email?<br /> Check your spam folder, otherwise <a href='/complete-account'>send me a new one!</a></p>
                 </div>
             </section>
         )

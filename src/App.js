@@ -6,6 +6,7 @@ import Navigation from './components/global/navigation/index'
 
 import CreateAccount from './components/create-account/index'
 import EmailVerification from './components/create-account/email-verification/index'
+import CompleteAccount from './components/create-account/complete-account/index'
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <BrowserRouter>
         <Route exact path='/create-account' component={CreateAccount} />
         <Route exact path='/email-verification' component={EmailVerification} />
+        <Route exact path='/complete-account' component={CompleteAccount} />
       </ BrowserRouter>
       {/* <Footer /> */}
     </div>
