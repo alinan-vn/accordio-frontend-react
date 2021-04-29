@@ -1,10 +1,10 @@
 .nav {
-    &-before-registration {
+
+    &-alt-color {
         margin: 0 0 1px 0;
         display: flex;
-        // width: 89%;
-        background-color: $nav-background-color;
-        box-shadow: 0px 1px $nav-background-shadow-color;
+        background-color: $nav-alt-background-color;
+        box-shadow: 0px 1px $nav-alt-background-color;
 
         & > li {
             list-style-type: none;
@@ -13,7 +13,25 @@
             & > a {
                 text-decoration: none;
                 font-size: 1.5rem;
-                color: $nav-font-color
+                color: $nav-alt-font-color
+            }
+        }
+    }
+
+    &-main {
+        margin: 0 0 1px 0;
+        display: flex;
+        background-color: $nav-main-background-color;
+        box-shadow: 0px 1px $nav-main-background-shadow-color;
+
+        & > li {
+            list-style-type: none;
+            padding: 5vh 0 5vh 5vw;
+            
+            & > a {
+                text-decoration: none;
+                font-size: 1.5rem;
+                color: $nav-main-font-color
             }
         }
     }

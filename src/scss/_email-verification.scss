@@ -1,6 +1,6 @@
 .email-verification{
     display: flex;
-    background-color: $create-account-background-color;
+    background-color: $create-account-background-color; // LOOK AT THIS
 
     &__image > img {
         height: 85vh;

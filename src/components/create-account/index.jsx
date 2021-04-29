@@ -64,7 +64,6 @@ class CreateAccount extends React.Component {
     render(){
         return(
             <section className='create-account'>
-                
                 <div><form className='create-account__form'>
                     <p className='create-account__form-title'>Set an email and password</p>
 
