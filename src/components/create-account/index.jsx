@@ -7,7 +7,10 @@ class CreateAccount extends React.Component {
     constructor(){
         super()
         this.state = {
-            passwordIcon: true
+            passwordIcon: true,        
+            email: '',
+            passowrd: '',
+            rPassword: ''
         }
     }
 
@@ -61,6 +64,13 @@ class CreateAccount extends React.Component {
         this.props.history.push('/email-verification')
     }
 
+    updateUserInfo = e => {
+        this.setState({
+            ...this.state,
+            [e.target.name]: e.target.value
+        })
+    }
+
     render(){
         return(
             <section className='create-account'>
@@ -68,13 +78,19 @@ class CreateAccount extends React.Component {
                     <p className='create-account__form-title'>Set an email and password</p>
 
                     <label className='create-account__form-label'>Email<br />
-                        <input className='create-account__form-input' placeholder='   gabriel.garcia@example.com' />
+                        <input 
+                            name='email' 
+                            onChange={(e) => this.updateUserInfo(e)} 
+                            className='create-account__form-input' 
+                            placeholder='   gabriel.garcia@example.com' 
+                        />
                     </label><br />
 
                     <label className='create-account__form-label'>Password<br />
                         <input 
                             id='password'
                             name='password'
+                            onChange={(e) => this.updateUserInfo(e)}
                             className='create-account__form-input' 
                             placeholder='   HireMe2021!' 
                             type='password'
@@ -85,7 +101,8 @@ class CreateAccount extends React.Component {
                     <label className='create-account__form-label'>Repeat Password<br />
                         <input 
                             id='repeat-password'
-                            name='repeat-password'
+                            name='rPassword'
+                            onChange={(e) => this.updateUserInfo(e)}
                             className='create-account__form-input' 
                             placeholder='   HireMe2021!' 
                             type='password'
