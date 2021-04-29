@@ -1,5 +1,5 @@
 .complete-account{
-    background-color: $create-account-background-color; // LOOK AT THIS
+    background-color: $create-account-background-color;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -49,8 +49,8 @@
         height: 5.5vh;
         width: 21.5vw;
         border-radius: .5rem;
-        background-color: $nav-main-background-color;   // LOOK AT THIS
-        color: $nav-main-font-color;                    // LOOK AT THIS
+        background-color: $create-account-button;
+        color: $create-account-button-font-color;
         font-size: 1.2rem;
     }
 }

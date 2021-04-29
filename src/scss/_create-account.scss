@@ -50,8 +50,8 @@
             margin-top: 2vh;
             height: 6vh;
             width: 20vw;
-            background-color: $nav-main-background-color;   // LOOK AT THIS
-            color: $nav-main-font-color;                    // LOOK AT THIS
+            background-color: $create-account-button;
+            color: $create-account-button-font-color;
             border-radius: 10px;
             font-size: 1.1rem;
 
@@ -63,8 +63,8 @@
             width: 15vw;
             height: .25vh;
             border-style: none;
-            background-color: #47ff47;                  // LOOK AT THIS
-            border-color: #47ff47;                      // LOOK AT THIS
+            background-color: #47ff47;  // Temporary
+            border-color: #47ff47;      // Temporary
             border-radius: 10rem;
         }
 
