@@ -3,6 +3,7 @@ import './scss/main.scss'
 import {BrowserRouter, Route} from 'react-router-dom'
 
 import Navigation from './components/global/navigation/index'
+import Footer from './components/global/footer/index'
 
 import CreateAccount from './components/create-account/index'
 import EmailVerification from './components/create-account/email-verification/index'
@@ -17,7 +18,7 @@ function App() {
         <Route exact path='/email-verification' component={EmailVerification} />
         <Route exact path='/complete-account' component={CompleteAccount} />
       </ BrowserRouter>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }
