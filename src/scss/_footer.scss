@@ -1,0 +1,45 @@
+.footer {
+    background-color: $footer-background-color;
+    color: $footer-font-color;
+
+    &-top {
+        display: flex;
+
+        &__logo {
+            font-weight: 500;
+            font-size: 2rem;
+        }
+
+        & > li {
+            list-style-type: none;
+            padding: 15vh 0 6vh 5vw;
+
+            & > a {
+                text-decoration: none;
+                color: $footer-font-color;
+            }
+        }
+    }
+
+    &-midline {
+        width: 86%;
+    }
+
+    &-bottom {
+        display: flex;
+
+        &__push {
+            margin-left: 57vw;
+        }
+
+        & > li {
+            list-style-type: none;
+            padding: 8vh 0 15vh 5vw;
+
+            & > a {
+                text-decoration: none;
+                color: $footer-font-color;
+            }
+        }
+    }
+}
